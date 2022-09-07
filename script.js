@@ -66,8 +66,8 @@ const delay = (millis) =>
   });
 
 newHeroButton.onclick = async () => {
-  await delay(100);
   heroImageDiv.setAttribute("src", "./qmark.png");
+  await delay(100);
   heroNameDiv.innerHTML = `<h2>Random Character</h2>`;
   heroPropertyDiv.innerHTML = ` <li class="list-group-item"><strong>INTELLIGENCE
   </strong></li>
